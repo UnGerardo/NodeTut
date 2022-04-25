@@ -35,6 +35,7 @@ const blog_get = (req, res) => {
                     })
                     .catch(err => {
                       console.log(err);
+                      res.status(404).render('blogs/404');
                     });
 };
 
